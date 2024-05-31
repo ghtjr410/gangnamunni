@@ -1,0 +1,144 @@
+body{
+    background-color: #ddd;
+    
+}
+.header__fixedContainer{
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+.header__Container{
+    width: 100vw;
+    position: relative;
+    top:48px
+}
+
+.fixedHeader{
+    
+    width: 100%;
+    max-width: 600px;
+    height: 48px;
+    
+    background-color:white;
+    margin: 0 auto; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+}
+.fixedHeader>img{
+    margin-left: 32px;
+}
+.fixedHeader__searchBox{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    gap: 15px;
+}
+.fixedHeader__searchInput{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fixedHeader__searchInput > i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fixedHeader__searchInput > input:focus{
+    outline: none;
+}
+.fixedHeader__searchInput > input{
+    margin-left: 5px;
+    width: 120px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 5px 0;
+    
+}
+.fixedHeader__searchBox__btn{
+    /* background-color: white; */
+    background-color: transparent;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 6px 14px;
+    white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트에 '...' 표시 */
+}
+
+.innerHeader{
+    
+    width: 100vw;
+    max-width: 600px;
+    height: 127px;
+
+    margin: 0 auto;
+
+    /* background-color: white; */
+}
+.upperHeader{
+    
+    background-color: white;
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.upperHeader>li{
+    width: 66px;
+    height: 67px;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: bisque; */
+    cursor: pointer;
+}
+.upperHeader>li>img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.upperHeader>li>p{
+font-size: 10px;
+}
+.searchResult__container{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+.searchResult{
+    width: 100%;
+    margin: 20px 20px;
+    /* background-color: aliceblue; */
+
+    font-size: 20px;
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+.red{
+    color: red;
+}
